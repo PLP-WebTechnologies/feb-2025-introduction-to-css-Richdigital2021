@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function changeContent() {
+            document.getElementById("dynamic-content").innerHTML = "<h2>New Updated Content!</h2>";
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="logo">
+            <h1>MyWebsite</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero-section">
+        <div class="hero-content">
+            <h2>Welcome to Our Website</h2>
+            <p>Your one-stop solution for amazing experiences.</p>
+            <button onclick="changeContent()">Click to Change Content</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- About Section -->
+            <section id="about-section">
+                <div class="content-box">
+                    <h2>About Us</h2>
+                    <p>We are a leading company providing top-notch services.</p>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services-section">
+                <div class="content-box">
+                    <h2>Our Services</h2>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <h3>Web Development</h3>
+                            <p>We create modern and responsive websites.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>SEO Optimization</h3>
+                            <p>Boost your website ranking on search engines.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Digital Marketing</h3>
+                            <p>Reach your audience effectively online.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dynamic Content Section (JavaScript Interaction) -->
+            <section>
+                <div id="dynamic-content">
+                    <h2>Original Content</h2>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Sidebar -->
+    <aside>
+        <div class="sidebar">
+            <h2>Latest News</h2>
+            <p>Stay updated with our latest articles and blogs.</p>
+        </div>
+    </aside>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Email: support@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
